@@ -1,0 +1,5 @@
+<%= form_tag("/site", method: "post") do %>
+  <%= label_tag(:url, "Enter URL") %>
+  <%= text_field_tag(:url) %>
+  <%= submit_tag("Create") %>
+<% end %>
