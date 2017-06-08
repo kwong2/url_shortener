@@ -7,4 +7,6 @@ post '/site' => 'sites#create'
 
 get ':url_short' => 'sites#show'
 
+root 'sites#new'
+
 end
