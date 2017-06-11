@@ -6,15 +6,15 @@ class SitesController < ApplicationController
 	end
 
 	def create
-		s = Site.new
-		puts "url short = #{s.generateshort}"
+		@site = Site.new
+		puts "url short = #{@site.generateshort}"
 
 		url_long = params[:url]
-		url_short = s.generateshort
-		s.url_short = url_short
-		s.url_long = url_long
-		s.save
-		render 'new'
+		url_short = @site.generateshort
+		@site.url_short = url_short
+		@site.url_long = url_long
+		@site.save
+		render 'show'
 		# redirect_to 'show'
 	end
 
