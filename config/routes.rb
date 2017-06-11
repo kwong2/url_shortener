@@ -5,7 +5,9 @@ get '/new' => 'sites#new'
 
 post '/site' => 'sites#create'
 
-get ':url_short' => 'sites#show'
+get ':url_short' => 'sites#redirect'
+
+get 'sites/show' => 'sites#show'
 
 root 'sites#new'
 

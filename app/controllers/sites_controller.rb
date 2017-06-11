@@ -2,6 +2,7 @@ class SitesController < ApplicationController
 
 	def new
 		@site = Site.new 
+		@sites = Site.all
 	end
 
 	def create
@@ -14,16 +15,18 @@ class SitesController < ApplicationController
 		s.url_long = url_long
 		s.save
 		render 'new'
+		# redirect_to 'show'
 	end
 
 	def show
-		p = params[:url_short]
-		@site = Site.find_by(url_short:p)
-		redirect_to @site.url_long
+		@site = Site.find(params[:id])
 	end 
 
-	# def redirect
-	# 	redirect_to Site.find_by(url_long: 
-	# end
+
+	def redirect
+		p = params[:url_short]
+		@site = Site.find_by(url_short: p)
+		redirect_to @site.url_long
+	end
 
 end
