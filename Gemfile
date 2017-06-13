@@ -49,13 +49,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.3.13'
 end
 
-# Use postgreSQL as the database for Active Record in Production
-group :production do
-  gem 'pg', '~> 0.20.0'
-end
+gem 'pg', '~> 0.20.0'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
