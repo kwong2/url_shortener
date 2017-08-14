@@ -49,7 +49,7 @@ To EXIT, use the following keys on the tabs:
 ctrl + c 
 ```
 
-## Authors
+## Author
 
 #### Kevin Wong
 
