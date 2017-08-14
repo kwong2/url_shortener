@@ -1,24 +1,58 @@
-# README
+# URL SHORTENER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+Ruby and Ruby on Rails is needed on your system to run this application. 
 
-* Ruby version
+**SKIP IF RUBY AND RUBY ON RAILS IS ALREADY INSTALLED**
 
-* System dependencies
+Proceed to https://www.ruby-lang.org/en/documentation/installation/ to learn how to install Ruby on your computer.
 
-* Configuration
+Once Ruby is installed, proceed to http://installrails.com/ to install the Ruby on Rails framework.
+*******************************************************
 
-* Database creation
+To download a copy of this repo into your computer, open your terminal and enter the following command: 
 
-* Database initialization
+```
+git clone https://github.com/kwong2/url_shortener
+``` 
+Once cloned, change the directory into the cloned repo with the following command:
 
-* How to run the test suite
+```
+cd url_shortener
+```
+Now that you are in the homecookd directory, run the migrations with:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rake db:migrate
+```
+When it is finished, open a separate tab in your terminal using the following keys:
 
-* Deployment instructions
+```
+Mac commmand + t
+Linux ctrl + shift + t
+```
 
-* ...
+In one of the tabs, run the following:
+
+```
+rails s
+```
+
+Finally, open your web browser, (chrome preferred) and go to:
+
+http://localhost:3000
+
+To EXIT, use the following keys on the tabs: 
+
+```
+ctrl + c 
+```
+
+## Authors
+
+#### Kevin Wong
+
+k.wong4@yahoo.com<br>
+http://www.github.com/kwong2<br>
+http://www.linkedin.com/in/kwong4
